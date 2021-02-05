@@ -14,16 +14,59 @@ html, body {
         "header"
         "googleContainer"
         "footer";
-    grid-template-rows: 3% 94% 3%;
+    grid-template-rows: 5% 90% 5%;
     z-index: 1;
 }
 
 #header {
     grid-area: header;
     display: fixed;
-    margin-top: 5px;
+    margin: 20px;
+    margin-top: 25px;
     background-color: white;
     z-index: 2;
+}
+
+.sign_in {
+    background-color: #4285f4;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #4285f4;
+    padding: 5px 15px 5px 15px;
+}
+
+.sign_in:hover {
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    color: rgb(92, 91, 91);
+    text-decoration: none;
+    padding: 5px;
+    font-size:13px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.app_picker {
+    background-image: url('//ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+    background-size: 528px 68px;
 }
 
 .googleContainer {
@@ -37,7 +80,7 @@ html, body {
     width: 30%;
     height: 25%;
     margin: 0 auto;
-    margin-top: 15%;
+    margin-top: 12%;
     flex-wrap: wrap;
     display: flex;
     align-items: center;
@@ -52,10 +95,16 @@ html, body {
 }
 
 .searchbar {
-    border: 1px solid #a1a1a1;
-    border-radius: 10px;
+    border: 1px solid #cfcfcf;
+    border-radius: 30px;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
+    height: 45px;
+    background-color: white;
+}
+
+.searchbar:hover {
+    box-shadow: 1px 1px #d3d2d2;
 }
 
 .googleButtons {
@@ -68,17 +117,29 @@ html, body {
 
 .search {
     margin: 0;
-    margin-left: 10%;
+    margin-left: 15%;
+    border: none;
+    background-color: #f4f4f4;
+    padding: 10px 10px 10px 10px;
+    font-size: 14px;
 }
 
 .lucky {
     margin: 0;
     margin-left: 10%;
+    border: none;
+    background-color: #f4f4f4;
+    padding: 10px 10px 10px 10px;
+    font-size: 14px;
 }
 
 #footer {
     grid-area: footer;
     display: fixed;
+    height: 100%;
+    width: auto;
     padding: 10px;
     background-color: #f4f4f4;
+    border-top: 1px solid #8f8d8d;
+    font-size: 20px;
 }
